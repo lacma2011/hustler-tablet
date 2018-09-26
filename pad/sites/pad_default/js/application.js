@@ -289,23 +289,15 @@ var stopPropagation = true;
 
 // categories
 hustlerCategories = {
-    '0:none': 'All Categories', '119:69': '69',
-    '109:amateur': 'Amateur', '104:anal': 'Anal', '110:asian': 'Asian', '121:asslicking': 'Asslicking', '128:bigass': 'Big Ass', 
-    '112:bigcock': 'Big Cock', '107:bigtits': 'Big Tits', '113:black': 'Black', '131:blonde': 'Blonde', '132:blowjob': 'Blowjob', 
-    '133:bondage': 'Bondage', '137:brunette': 'Brunette', '144:creampie': 'Creampie', '146:cumswapping': 'Cum Swapping', '147:cumshot': 'Cumshot', 
-    '410:doggystyle': 'Doggystyle', '153:facial': 'Facial', '157:footfetish': 'Foot Fetish', '158:gangbang': 'Gangbang', '111:groupsex': 'Group Sex', 
-    '163:hairypussy': 'Hairy Pussy', '165:hardcore': 'Hardcore', '182:pool': 'Hot Tub / Pool', '166:interracial': 'Interracial', '115:latina': 'Latina', 
-    '114:lesbian': 'Lesbian', '169:lingerie': 'Lingerie', '117:masturbation': 'Masturbation', '106:milf': 'MILF', '173:naturalbreasts': 'Natural', 
-    '177:oralsex': 'Oral', '178:outdoorsex': 'Outdoor Sex', '108:parody': 'Parody', '188:roughsex': 'Petite', '181:piercings': 'Piercings', 
-    '183:pov': 'POV', '187:redhead': 'Redhead', '148:dildo': 'Sex Toys', '193:smalltits': 'Small Tits', '196:spanking': 'Spanking', 
-    '198:squirting': 'Squirting', '199:stockings': 'Stockings', '200:strapon': 'Strap-On', '201:tattoos': 'Tattoos', '105:teen18': 'Teen 18+', 
-    '202:threesome': 'Threesome', '203:tittyfuck': 'Titty Fuck'
+    '0:none': 'All Categories', '119:69': 'Action',
+    'adventure:Adventure': 'Amateur', '104:comedy': 'Comedy', '110:crime': 'Crime & Gangster', '121:drama': 'Drama', '128:epics': '>Epics/Historical', 
+    '112:horror': 'Horror', '107:musical': 'Musical/Dance', '113:scifi': 'Science Fiction', '131:war': 'War', 'westerns:Westerns': 'Westerns'
 };
 
 hustlerMagazines = {
     'hustler' : 'Hustler',
-    'barely-legal' : 'Barely Legal',
-    'hustlers-taboo' : 'Hustler\'s Taboo'
+    'barely-legal' : 'Hustler #2',
+    'hustlers-taboo' : 'Hustler #3'
 };
 
 // categories
@@ -314,23 +306,23 @@ hustlerSites = { // Site Code : Full Name
     'barely-legal' : 'Barely Legal',
     'hustlers-taboo' : 'Hustler\'s Taboo',
     'vcaxxx' : 'VCA XXX',
-    'anal-hookers' : 'Anal Hookers',
-    'asian-fever' : 'Asian Fever',
-    'beaver-hunt' : 'Beaver Hunt',
-    'bossy-milfs' : 'Bossy Milfs',
-    'busty-beauties' : 'Busty Beauties',
-    'daddy-gets-lucky' : 'Daddy Gets Lucky',
-    'hometown-girls' : 'Hometown Girls',
-    'hottie-moms' : 'Hottie Moms',
+    'hook' : 'Hook',
+    'fever' : 'Asian Fever',
+    'hunt' : 'Hunt',
+    'bossy' : 'Bossy',
+    'beauties' : 'Beauties',
+    'daddy' : 'Daddy',
+    'hometown' : 'Hometown',
+    'hottie' : 'Hottie',
     'hustlaz' : 'Hustlaz',
     'hustler-hd' : 'HustlerHD',
-    'hustler-girls' : 'Hustler Girls',
-    'hustlers-lesbians' : 'Hustler\'s Lesbians',
-    'hustlers-college-girls' : 'Hustler\'s College Girls',
-    'muchas-latinas' : 'Muchas Latinas',
-    'scary-big-dicks' : 'Scary Big Dicks',
-    'too-many-trannies' : 'Too Many Trannies',
-    'hustler-parodies' : 'Hustler Parodies'
+    'hustlerg' : 'Hustler G',
+    'hustlers-bueno' : 'Hustler\'s Bueno',
+    'college' : 'College',
+    'muchas' : 'Muchas',
+    'scary' : 'Scary',
+    'too-many' : 'Too Many',
+    'parodies' : 'Parodies'
 };
 
 // sort orders
