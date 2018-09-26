@@ -1,4 +1,4 @@
-<?
+<?php
 // load the mobile functions
 // NOTE that we never use link in PAD_BASE_DIR/includes/functions or mobile_detect.php
 require(MOBILE_LIB . 'functions.php');
@@ -52,4 +52,3 @@ $site = Paysite::get_current_site(SITECODE);
 require('sites/' . SITECONFIG . '/config.php');
 // initialize
 $page = 1;
-?>

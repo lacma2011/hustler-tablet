@@ -1,4 +1,4 @@
-<?
+<?php
 
 function process_content_scene($content_scene, $site_type = 'tour', $get_vid_folder = false, $nonmobile = FALSE) {
     // process the results of Paysite::get_content_scene()

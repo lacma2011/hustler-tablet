@@ -102,5 +102,3 @@ class Hustler_Content_Scenes extends Hustler_Content {
     }
 
 }
-
-?>

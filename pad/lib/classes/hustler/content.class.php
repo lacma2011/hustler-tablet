@@ -1486,6 +1486,3 @@ abstract class Hustler_Content {
         $this->params['category_id'] = $id;
     }
 }
-
-
-?>

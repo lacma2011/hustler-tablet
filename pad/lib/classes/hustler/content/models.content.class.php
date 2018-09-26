@@ -68,5 +68,3 @@ class Hustler_Content_Models extends Hustler_Content {
     }
 
 }
-
-?>

@@ -28,5 +28,3 @@ class Hustler_Content_Pics extends Hustler_Content {
     }
     
 }
-
-?>

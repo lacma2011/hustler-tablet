@@ -113,4 +113,3 @@ function mobile_device_detect($iphone=true,$ipad=true,$android=true,$opera=true,
 
 }
 
-?>

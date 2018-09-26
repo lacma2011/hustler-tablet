@@ -7,7 +7,7 @@
 // for now we are not sorting, since Paysite allows you to choose featured but not sort except for by latest
 //apache_setenv('ENVIRONMENT','PRODUCTION'); // TODO: REMOVE THIS!!! just for demo on beta
 //apache_setenv('ENVIRONMENT','DEVELOPMENT'); // With this on, you will see content that aren't released yet.
-//define('TESTING', TRUE); // turn on custom error handler, show all errors
+define('TESTING', TRUE); // turn on custom error handler, show all errors
 
 // important app/system settings
 
@@ -20,7 +20,7 @@
 //  dev-his 
 //        : misc test sites for hustlerhd, hustlergirls, hisvideo on dev-jbordallo.beta
 
-define('PAD_SITE_CONFIG', 'live');
+define('PAD_SITE_CONFIG', 'local');
 
 if (PAD_SITE_CONFIG == 'live') {
     $docroot = '/'; // the folder where the app is located from domain root
@@ -99,13 +99,14 @@ if (PAD_SITE_CONFIG == 'live') {
 } else {
     // LOCAL, jerome's machine
     define('MEMBERS_BASE_DIR', "/var/www/hustler-members/");
-    $baseroot = '/var/www/hustler-cms/cms/'; //hmph... paysite_template needs it
+    $baseroot = '/var/www/hustler-members/cms/'; //hmph... paysite_template needs it
     //$docroot = 'pad/sites/pad_default/'; // the folder where the app is located from domain root
     $docroot = '/'; // the folder where the app is located from domain root
     //define('PAD_URL_ROOT', '/');
     define('PAD_BASE_DIR', '/var/www/hustler-members/pad/');
     require(PAD_BASE_DIR . 'lib/config/functions.php'); // load all the other configs, classes, functions, etc.
     $tour_domain = getDomain();
+//$tour_domain = 'hustler.com';
     //mobile app paths
     define('MOBILE_BASE', MEMBERS_BASE_DIR . 'pad/sites/phone12/'); // location of old mobile app
     define('MOBILE_LIB', PAD_BASE_DIR . 'lib/includes/');
@@ -124,9 +125,9 @@ if (PAD_SITE_CONFIG == 'live') {
     // error
     $settings['tour_url_basepath'] = ''; //um may not be important anymore. was basically docroot.
     $settings['errors_skip'] = array( // if getting errors, skip from these files
-            '/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/paysite_template.php',
-            '/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/classes/content.class.php',
-            '/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/site_configuration.php',
+            //'/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/paysite_template.php',
+            //'/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/classes/content.class.php',
+            //'/var/www/cms/svn_trunk/cms.lfpcontent.com/includes/site_configuration.php',
         );
     // if domain was not defined on page, let's override content
     //if (!defined('DOMAIN')) $settings['content_override'] = 'barely-legal';
@@ -144,5 +145,3 @@ if (TRUE === TESTING) {
 error_reporting(ERROR_REP);
 
 require(PAD_BASE_DIR . 'lib/config/init.php'); // load all the other configs, classes, functions, etc.
-
-?>

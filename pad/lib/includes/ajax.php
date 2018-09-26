@@ -248,5 +248,3 @@ function getAjaxFilters($filters) {
     return $arr;
 }
 
-
-?>

@@ -374,7 +374,3 @@ class Hustler_Content_Ajax extends Hustler_Content {
 }
 
 
-
-
-
-?>
