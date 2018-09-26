@@ -106,7 +106,10 @@ if (PAD_SITE_CONFIG == 'live') {
     define('PAD_BASE_DIR', '/var/www/hustler-members/pad/');
     require(PAD_BASE_DIR . 'lib/config/functions.php'); // load all the other configs, classes, functions, etc.
     $tour_domain = getDomain();
-//$tour_domain = 'hustler.com';
+
+    // override since we are not really using hustler.com anymore!
+    $tour_domain = 'hustler.com';
+
     //mobile app paths
     define('MOBILE_BASE', MEMBERS_BASE_DIR . 'pad/sites/phone12/'); // location of old mobile app
     define('MOBILE_LIB', PAD_BASE_DIR . 'lib/includes/');
