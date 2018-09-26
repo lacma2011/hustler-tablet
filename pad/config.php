@@ -142,6 +142,7 @@ if (TRUE === TESTING) {
 } else {
     define('ERROR_REP', E_USER_ERROR);
 }
+date_default_timezone_set('America/Los_Angeles');
 error_reporting(ERROR_REP);
 
 require(PAD_BASE_DIR . 'lib/config/init.php'); // load all the other configs, classes, functions, etc.
