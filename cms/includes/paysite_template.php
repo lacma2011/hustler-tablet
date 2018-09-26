@@ -1,10 +1,8 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+// This script mocks data for API. And other random functions that app may need.
+//
 
 class Paysite
 {
@@ -95,5 +93,52 @@ class Content
     public static function image_handler($cache_url, $cache_path, $media_location, $size_x, $size_y) {
         return '/images/placeholder/photo-placeholder.png';
         return '/images/logos/hustler.png';
+    }
+}
+
+if (!function_exists('random_int')) {
+    function random_int($min, $max) {
+        if (!function_exists('mcrypt_create_iv')) {
+            trigger_error(
+                'mcrypt must be loaded for random_int to work', 
+                E_USER_WARNING
+            );
+            return null;
+        }
+        
+        if (!is_int($min) || !is_int($max)) {
+            trigger_error('$min and $max must be integer values', E_USER_NOTICE);
+            $min = (int)$min;
+            $max = (int)$max;
+        }
+        
+        if ($min > $max) {
+            trigger_error('$max can\'t be lesser than $min', E_USER_WARNING);
+            return null;
+        }
+        
+        $range = $counter = $max - $min;
+        $bits = 1;
+        
+        while ($counter >>= 1) {
+            ++$bits;
+        }
+        
+        $bytes = (int)max(ceil($bits/8), 1);
+        $bitmask = pow(2, $bits) - 1;
+
+        if ($bitmask >= PHP_INT_MAX) {
+            $bitmask = PHP_INT_MAX;
+        }
+
+        do {
+            $result = hexdec(
+                bin2hex(
+                    mcrypt_create_iv($bytes, MCRYPT_DEV_URANDOM)
+                )
+            ) & $bitmask;
+        } while ($result > $range);
+
+        return $result + $min;
     }
 }
