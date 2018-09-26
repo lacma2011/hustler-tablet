@@ -1,4 +1,4 @@
-<?
+<?php
 function h_autoload($class) {
     $arr = explode('_', $class);
 //print_r($arr);
@@ -54,5 +54,3 @@ if (1==0) {
     $a = new Hustler_Mobile_Pagebar();
     exit;
 }
-
-?>

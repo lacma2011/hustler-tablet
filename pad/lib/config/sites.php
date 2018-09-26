@@ -1,4 +1,4 @@
-<?
+<?php
 define('SITE_CODE_HIS', 'his-classics');
 
 
@@ -33,6 +33,3 @@ $NICHE_TOUR_VARS=Array(
         'hustlergirls.com'=>Array('site_code' => 'hustler-girls', 'site_name'=>'Hustler Girls', 'site_id'=>39222, 'tour_url'=>'http://tour.hustlergirls.com', 'members_url'=>'http://members.hustlergirls.com', 'analytics_id'=>'UA-1464950-9', 'warning_image_dir'=>'hustlermegapass'),
         'hisvideo.com'=>Array('site_code' => SITE_CODE_HIS, 'site_name'=>'HIS Video', 'site_id'=>43, 'tour_url'=>'http://tour.hisvideo.com', 'members_url'=>'http://members.hisvideo.com', 'analytics_id'=>'UA-1464950-9', 'warning_image_dir'=>'hustlermegapass'),
 );
-
-
-?>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  *  Hustler_Photo_Contentbasic
  * 
@@ -68,4 +68,3 @@ class Hustler_Contentbasic_Photodetail implements iHustler_Contentbasic {
 
 }
 
-?>

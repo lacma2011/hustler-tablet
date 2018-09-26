@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  *  Hustler_Photo_Contentbasic_Search
  * 
@@ -447,5 +447,3 @@ class Hustler_Contentbasic_Search implements iHustler_Contentbasic {
     }
 
 }
-
-?>

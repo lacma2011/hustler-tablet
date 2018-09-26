@@ -45,7 +45,6 @@ function html5_player($clip) {
 </script>
 </body>
 </html>
-    <?
+    <?php
 }
-?>
 

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  *  Hustler_Simple_Contentbasic
  * 
@@ -99,5 +99,3 @@ class Hustler_Contentbasic_Simple implements iHustler_Contentbasic {
     }
 
 }
-
-?>
