@@ -1,0 +1,39 @@
+#php_value auto_prepend_file check.php
+
+php_flag register_globals off
+php_flag safe_mode on
+Options -Indexes -MultiViews
+php_flag display_errors on
+
+RewriteEngine On
+
+
+#TODO: CHANGE links /pad/sites/pad_default/ajax/ to correct one. likely /ajax/
+
+# URLs MUST have trailing slash! Pagination bar UI aactually can mess up otherwise
+# add trailing slashes
+#RewriteCond $0 .*
+# if we want everything but resource folders (images/ css/ js/)  and search result (search/)
+#RewriteCond $0 !^(images/|images$|css/|css$|js/|js$|flowplayer/|flowplayer$|video/|video$|xml/|xml$|skitter/|skitter$|fonts/|fonts$)
+#RewriteRule ^[^\.]+[^/]$ /ajax/$0/ [R=301,L] # assumes pages start at root: /ajax/
+
+
+#for route.php
+RewriteBase /ajax/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)$ ajax.php?uri=$1 [QSA,L]
+
+
+
+# old fashioned routing rules, without route.php
+##
+#RewriteRule ^$ ajax.php?page=1 [L,NC,QSA]
+#
+## type/sort/filter/page/
+#RewriteRule ^(videos|models|dvds|photos|magazines)/([A-Za-z0-9#\.,\-_]*)/([A-Za-z0-9#\.,\-_]*)/([0-9]*)/$ ajax.php?type=$1&sort=$2&filter=$3&page=$4 [L,NC,QSA]
+## type/sort/page/
+#RewriteRule ^(videos|models|dvds|photos|magazines)/([A-Za-z0-9#\.,\-_]*)/([0-9]*)/$ ajax.php?type=$1&sort=$2&page=$3 [L,NC,QSA]
+## type/page/
+#RewriteRule ^(videos|models|dvds|photos|magazines)/([0-9]*)/$ ajax.php?type=$1&page=$2 [L,NC,QSA]
